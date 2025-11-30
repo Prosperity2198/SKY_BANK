@@ -1,0 +1,192 @@
+{
+  "dashboard": {
+    "userName": "John Smith",
+    "accountNumber": "1234567890",
+    "accountType": "Savings",
+    "balance": "124,560.75"
+  },
+  "profile": {
+    "name": "John Smith",
+    "email": "john.doe.smith.pill@example.com",
+    "phone": "08012345677"
+  },
+  "cards": [
+    {
+      "cardNumber": "7543 7587 6585 6858 568",
+      "expiry": "11/12",
+      "cvv": "222",
+      "status": "active",
+      "id": "e8b3"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "type": "credit",
+      "amount": 5000,
+      "description": "Salary Deposit",
+      "date": "2023-10-01"
+    },
+    {
+      "id": "2",
+      "type": "debit",
+      "amount": 1200,
+      "description": "Grocery Shopping",
+      "date": "2023-10-02"
+    },
+    {
+      "id": "3",
+      "type": "debit",
+      "amount": 300,
+      "description": "Electricity Bill",
+      "date": "2023-10-03"
+    },
+    {
+      "id": "4",
+      "type": "credit",
+      "amount": 2000,
+      "description": "Freelance Payment",
+      "date": "2023-10-04"
+    },
+    {
+      "id": "5",
+      "type": "debit",
+      "amount": 1500,
+      "description": "Online Purchase",
+      "date": "2023-10-05"
+    },
+    {
+      "id": "1763710118624",
+      "type": "debit",
+      "amount": 100000,
+      "description": "Transfer to chi (7368394678)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1763710165553",
+      "type": "debit",
+      "amount": 70000,
+      "description": "Transfer to chi (8756475353)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1763710764504",
+      "type": "debit",
+      "amount": 90000,
+      "description": "Transfer to hansx (6775675654)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1763711171596",
+      "type": "debit",
+      "amount": 12000,
+      "description": "Transfer to dave (3232442444)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1763713588203",
+      "type": "debit",
+      "amount": 2000,
+      "description": "Airtime purchase to 09087546543 (GLO)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1763714151232",
+      "type": "debit",
+      "amount": 600,
+      "description": "Airtime purchase to 08065543432 (GLO)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1763714723456",
+      "type": "debit",
+      "amount": 1000,
+      "description": "Airtime purchase to 09076564543 (GLO)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1763716354863",
+      "type": "debit",
+      "amount": 90000,
+      "description": "Airtime purchase to 09087633454 (GLO)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1763716660643",
+      "type": "debit",
+      "amount": 800,
+      "description": "Airtime purchase to 09076534323 (AIRTEL)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1763716750702",
+      "type": "debit",
+      "amount": 10000,
+      "description": "Transfer to james (6767476476)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1763716931663",
+      "type": "debit",
+      "amount": 900,
+      "description": "Airtime purchase to 09065456454 (9MOBILE)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1763717264581",
+      "type": "debit",
+      "amount": 9000,
+      "description": "Airtime purchase to 09087656456 (MTN)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1763717295931",
+      "type": "debit",
+      "amount": 90000,
+      "description": "Transfer to uniz (9876565653)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1763756606080",
+      "type": "debit",
+      "amount": 100000,
+      "description": "Transfer to deo (8494948848)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1763756662913",
+      "type": "debit",
+      "amount": 1000,
+      "description": "Airtime purchase to 09047474838 (MTN)",
+      "date": "2025-11-21"
+    },
+    {
+      "id": "1764123327177",
+      "type": "debit",
+      "amount": 10000,
+      "description": "Transfer to jame (0087765575)",
+      "date": "2025-11-26"
+    },
+    {
+      "id": "1764123373035",
+      "type": "debit",
+      "amount": 1000,
+      "description": "Airtime purchase to 09087545432 (MTN)",
+      "date": "2025-11-26"
+    },
+    {
+      "id": "1764333410324",
+      "type": "debit",
+      "amount": 10000,
+      "description": "Transfer to james (3345234535)",
+      "date": "2025-11-28"
+    },
+    {
+      "id": "1764333443132",
+      "type": "debit",
+      "amount": 10000,
+      "description": "Airtime purchase to 09036455374 (MTN)",
+      "date": "2025-11-28"
+    }
+  ]
+}
