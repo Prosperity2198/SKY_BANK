@@ -6,43 +6,42 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
 
-/**
- * Layout behavior:
- * - The central container (.max-w-7xl) is `relative` so the sidebar can be positioned
- *   absolutely inside it (top-6 .. bottom-6). This gives the sidebar the same visual
- *   height as the dashboard chrome (the container), making it look like an overlay card.
- * - On desktop the sidebar is visible and overlays the main content (does not push it).
- * - On mobile the sidebar slides in with backdrop and occupies left side.
- */
 export default function MainLayout() {
   // State to manage sidebar open/close for mobile view
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
 
   return (
     // Main container with full screen height and background
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-900">
+
       {/* Centered container with max width, padding, and relative positioning for sidebar */}
       <div className="max-w-7xl mx-auto px-6 py-6 relative">
+
         {/* Flex container for layout structure */}
         <div className="flex gap-6">
+
           {/* Placeholder for desktop sidebar spacing */}
           <div className="hidden md:block w-72 pointer-events-none">
+
             {/* This div preserves horizontal spacing for the overlay sidebar */}
           </div>
 
           {/* Main content column */}
           <div className="flex-1 flex flex-col">
+
             {/* Topbar section with toggle function for sidebar */}
             <div className="mb-6">
+
               <Topbar onToggle={() => setSidebarOpen((s) => !s)} />
             </div>
 
             {/* Main content area with card styling and scrollable outlet */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm p-6 min-h-[75vh] max-h-[75vh] overflow-auto scrollbar-hide">
+            <div className="bg-gray-800 rounded-2xl shadow-sm p-6 min-h-[75vh] max-h-[75vh] overflow-auto scrollbar-hide">
               <Outlet />
             </div>
           </div>
         </div>
+
         {/* Desktop overlay sidebar: Absolutely positioned within the container */}
         <div
           aria-hidden={false}
@@ -63,6 +62,7 @@ export default function MainLayout() {
           sidebarOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
+        
         {/* Backdrop with blur effect for mobile overlay */}
         <div
           className={`absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300 ${

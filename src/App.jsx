@@ -1,7 +1,4 @@
-// App.jsx: Main application component that sets up routing for the entire React app.
-// Imports React Router components for navigation and all page components for routing.
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import MainLayout from "./components/layout/MainLayout";
 import LandingPage from "./components/pages/LandingPage";
 import Dashboard from "./components/pages/Dashboard";
@@ -20,14 +17,17 @@ const App = () => {
   return (
     // BrowserRouter: Provides routing context to the app
     <BrowserRouter>
+
       <Routes>
         {/* Public route for the landing page, no layout wrapper */}
         <Route path="/" element={<LandingPage />} />
 
         {/* Nested routes for dashboard pages, wrapped in MainLayout for sidebar and topbar */}
         <Route path="/dashboard/*" element={<MainLayout />}>
+          
           {/* Default dashboard route renders the Dashboard component */}
           <Route index element={<Dashboard />} />
+
           {/* Subroutes for various dashboard functionalities */}
           <Route path="transfer" element={<Transfer />} />
           <Route path="airtime" element={<BuyAirtime />} />
@@ -38,12 +38,7 @@ const App = () => {
           <Route path="help" element={<Help />} />
           <Route path="profile" element={<Profile />} />
           <Route path="settings" element={<Settings />} />
-          {/* Placeholder for additional subroutes, e.g., customers */}
-          {/* <Route path="customers" element={<Customers/>} /> */}
         </Route>
-
-        {/* Optional catch-all route for 404 or fallback to landing page */}
-        {/* <Route path="*" element={<LandingPage />} /> */}
       </Routes>
     </BrowserRouter>
   );

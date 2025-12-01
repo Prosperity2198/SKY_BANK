@@ -1,5 +1,3 @@
-// Login.jsx: Modal component for user login, handling form validation, password visibility toggle, and navigation.
-// Imports React hooks, navigation, form handling libraries, validation schema, and icons.
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";

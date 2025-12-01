@@ -1,4 +1,3 @@
-// src/components/pages/PrivacyPolicy.jsx
 import React, { useState, useEffect } from "react";
 import { FiShield, FiChevronDown } from "react-icons/fi";
 import Loader from "../utils/Loader";

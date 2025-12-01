@@ -124,6 +124,7 @@ export default function Transfer() {
     setTimeout(() => setSuccess(null), 3000);
   };
 
+  // --------------- UI ---------------
   if (loading) return <Loader />;
 
   return (

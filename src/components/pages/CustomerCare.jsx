@@ -4,14 +4,6 @@ import { FiPhoneCall, FiMail, FiCheckCircle } from "react-icons/fi";
 import * as yup from "yup";
 import Loader from "../utils/Loader";
 
-/**
- * Simplified Customer Care page
- * - Contact info (call & email)
- * - Minimal contact form (name, email, message)
- * - Basic client-side validation + simulated submit
- * - Simple static FAQ (not collapsible to keep it minimal)
- */
-
 export default function CustomerCare() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState({});

@@ -1,5 +1,3 @@
-// Sidebar.jsx: Navigation sidebar component for the dashboard, displaying menu items with icons and active state styling.
-// Imports React, NavLink for routing, and Feather icons for navigation items.
 import React from "react";
 import { NavLink } from "react-router-dom";
 import {
@@ -15,7 +13,8 @@ import {
   FiSettings,
 } from "react-icons/fi";
 
-export default function Sidebar({ onClose = () => {} }) {
+export default function Sidebar({ onClose = () => { } }) {
+  
   // Array of navigation items with name, route, and icon for the sidebar menu
   const navItems = [
     { name: "Dashboard", to: "/dashboard", icon: <FiHome /> },
@@ -33,7 +32,7 @@ export default function Sidebar({ onClose = () => {} }) {
 
   return (
     // Sidebar container with full height, flex layout, and styling for backdrop blur and rounded corners
-    <aside className="h-full flex flex-col bg-slate-800/80 dark:bg-slate-800/80 backdrop-blur-md text-aqua rounded-2xl p-4 shadow-2xl">
+    <aside className="h-full flex flex-col bg-slate-800/80 backdrop-blur-md text-aqua rounded-2xl p-4 shadow-2xl">
       {/* Brand section at the top of the sidebar */}
       <div className="mb-6">
         <div className="bg-slate-800/90 backdrop-blur-md rounded-xl p-4 flex flex-col items-center justify-center shadow-lg border border-slate-800/90">

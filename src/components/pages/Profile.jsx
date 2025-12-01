@@ -1,4 +1,3 @@
-// src/components/pages/Profile.jsx
 import React, { useState, useEffect } from "react";
 import { FiUser, FiEdit2, FiSave } from "react-icons/fi";
 import { useForm } from "react-hook-form";

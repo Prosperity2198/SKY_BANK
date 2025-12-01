@@ -129,7 +129,7 @@ export default function BuyAirtime() {
         description: `Airtime purchase to ${formatPhone(form.phone)} (${getNetworkLabel(form.network)})`,
         date: new Date().toISOString().split("T")[0],
       };
-      await axios.post("http://localhost:3003/transactions", newTransaction);
+      await axios.post("/transactions", newTransaction);
     } catch (error) {
       console.error("Failed to save transaction:", error);
       setSuccess({ error: "Transaction failed to save." });

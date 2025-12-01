@@ -1,5 +1,3 @@
-// Dashboard component: Displays user account information including name, account number, type, and balance with toggle visibility for sensitive data.
-// Imports necessary React hooks, icons, axios for API calls, and a Loader component for loading state.
 import React, { useState, useEffect } from "react";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import axios from "axios";

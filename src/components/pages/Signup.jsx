@@ -1,5 +1,3 @@
-// Signup.jsx: Modal component for user registration, handling form validation, password visibility toggle, and navigation.
-// Imports React hooks, form handling libraries, validation schema, and icons.
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";

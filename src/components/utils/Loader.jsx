@@ -1,4 +1,3 @@
-// src/utils/Loader.jsx
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 function Loader() {

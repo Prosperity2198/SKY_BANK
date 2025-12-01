@@ -1,5 +1,3 @@
-// LandingPage.jsx: Main landing page component for the Sky Bank app, displaying hero section, navbar, and modals for login/signup.
-// Imports React hooks, navigation, modal components, and landing image asset.
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Login from "./Login";

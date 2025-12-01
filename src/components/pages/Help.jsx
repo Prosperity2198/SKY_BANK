@@ -12,6 +12,7 @@ export default function Help() {
     return () => clearTimeout(timer);
   }, []);
 
+  // ------------- UI -------------
   if (initialLoading) return <Loader />;
 
   return (

@@ -1,4 +1,3 @@
-// src/components/pages/Settings.jsx
 import React, { useState, useEffect } from "react";
 import { FiSettings, FiLock, FiCheck } from "react-icons/fi";
 import * as yup from "yup";

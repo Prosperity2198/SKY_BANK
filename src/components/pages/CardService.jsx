@@ -22,6 +22,7 @@ const schema = yup.object({
     .matches(/^\d{3}$/, "CVV must be 3 digits"),
 });
 
+// --------Use State--------------
 export default function CardService() {
   const [form, setForm] = useState({ cardNumber: "", expiry: "", cvv: "" });
   const [errors, setErrors] = useState({});

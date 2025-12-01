@@ -1,4 +1,3 @@
-// src/components/pages/Transactions.jsx
 import React, { useState, useEffect } from "react";
 import { FiList, FiArrowDownCircle, FiArrowUpCircle } from "react-icons/fi";
 import axios from "axios";

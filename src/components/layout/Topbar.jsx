@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FiChevronDown, FiLogOut, FiUser, FiSettings, FiHelpCircle, FiHeadphones } from "react-icons/fi";
 
 export default function Topbar({ onToggle }) {
+
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
@@ -36,13 +37,13 @@ export default function Topbar({ onToggle }) {
   };
 
   return (
-    <div className="bg-slate-800/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-lg border border-slate-700/40">
+    <div className="bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-lg border border-slate-700/40">
       <div className="flex items-center justify-between px-5 h-20">
         {/* Left: title + hamburger */}
         <div className="flex items-center gap-3">
           <button
             onClick={onToggle}
-            className="md:hidden p-2 rounded-md border border-slate-700/60"
+            className="md:hidden p-2 text-aqua rounded-md border border-slate-700/60"
             aria-label="Open menu"
           >
             ☰
