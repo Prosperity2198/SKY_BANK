@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: sky-bank
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: dist
